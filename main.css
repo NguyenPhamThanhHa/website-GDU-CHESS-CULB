@@ -1,0 +1,175 @@
+@import url(footer.css);
+/* body */
+.navbar {
+  background: #111;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex; /* Kích hoạt Flexbox cho thanh điều hướng */
+  justify-content: center; /* Căn giữa các mục menu bên trong thanh đen */
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+}
+.nav-links {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  gap: 80px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 30px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: #fff;
+  color: #000;
+}
+/* tiêu đề header */
+#home h1 {
+  display: flex;
+  justify-content: center; /* Căn giữa ngang */
+  font-family: "Montserrat", sans-serif;
+  color: brown; /* màu */
+  margin: 20px;
+  font-size: 30px;
+}
+
+/* ảnh bìa */
+#home img {
+  width: 100%;
+  height: 700px; /* hoặc 100vh */
+  object-fit: cover; /* không bị méo */
+  display: block; /* XÓA khoảng dư bên dưới */
+}
+
+/* soucer trang chủ */
+#home {
+  width: 100%;
+  margin-left: 0px;
+}
+
+/* khung bao quát phần giới thiệu */
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* nội dung giới thiệu */
+.grid-text {
+  text-align: left;
+  font-size: 25px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: auto;
+  padding: 0 30px;
+  line-height: 1.5;
+  /* thụt trái phải */
+}
+
+/* hình ảnh giới thiệu */
+.grid-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* căn giữa ảnh */
+  gap: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+/* caption */
+figcaption {
+  font-style: italic;
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* caption */
+.caption {
+  padding: 30px;
+  text-align: center; /* căn giữa */
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* khung bao quát nội dung giới thiệu */
+.club-events-wrapper {
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 30px 10px;
+}
+/* chỉnh riêng cái tiêu đề */
+.content h2 {
+  margin: 10px;
+}
+
+.content {
+  font-size: 25px;
+  line-height: 1.5;
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* hoạt động */
+.img-active {
+  display: block;
+  width: 60%;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 20px 20px;
+}
+
+.menu-item-active {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+  padding: 20px;
+}
+
+.menu-item-active::-webkit-scrollbar {
+  display: none;
+}
+
+/* khung chỉnh sửa slide ảnh */
+.slide {
+  width: 280px;
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ảnh */
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
